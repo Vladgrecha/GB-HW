@@ -6,6 +6,8 @@ public class HomeWorkApp2 {
         int b = -1;
         int number = 0;
         int value = -1;
+        int amount = 9;
+        String someString = "bla-bla-bla";
 
         System.out.println("************Ex-1************");
         if (checkSum (a, b)) {
@@ -27,7 +29,10 @@ public class HomeWorkApp2 {
         } else {
             System.out.println("Number is positive");
         }
-        }
+
+        System.out.println("************Ex-4************");
+        printStrings(amount, someString);
+    }
 
         //Задани-1
     public static boolean checkSum (int a, int b){
@@ -45,5 +50,12 @@ public class HomeWorkApp2 {
     }
 
         //Задание-4
-    
+    public static void printStrings (int amount, String someString) {
+        for (int i = 1; i <= amount; i++) {
+            System.out.print(i + ") ");
+            System.out.println(someString);
+        }
+    }
+
+        //Задние-5
     }
