@@ -4,6 +4,7 @@ public class HomeWorkApp2 {
     public static void main(String[] args) {
         int a = 11;
         int b = -1;
+        int value = 0;
 
         if (checkSum (a, b)) {
             System.out.println("Сумма лежит в промежутке 10-20");
@@ -11,7 +12,13 @@ public class HomeWorkApp2 {
             System.out.println("Сумма лежит за пределами 10-20");
         }
 
-        
+        if (isNumberPositive(value)) {
+            System.out.println ("Number is positive");
+        } else {
+            System.out.println ("Number is negative");
+        }
+
+
         }
 
         //Задани-1
@@ -20,4 +27,7 @@ public class HomeWorkApp2 {
     }
 
         //Задание-2
+    public static boolean isNumberPositive (int number) {
+        return number >= 0;
+    }
     }
